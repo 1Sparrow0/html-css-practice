@@ -7,7 +7,7 @@
   </head>
   <body>
     <nav class="nav-container">
-      <div class="logo">LOGO</div>
+      <div class="logo">Café Lumière</div>
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="hamburger">
         <span></span>
@@ -55,5 +55,273 @@
         </div>
       </div>
     </section>
+
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <!-- Optional wrapper for max-width control -->
+        <h2 class="menu-title">Our Menu</h2>
+
+        <div class="menu-grid">
+          <!-- Menu Item -->
+          <article class="menu-item">
+            <img
+              src="/img/afogato.jpg"
+              alt="Affogato - espresso poured over vanilla gelato"
+              loading="lazy"
+            />
+            <h3>Affogato</h3>
+            <p class="price">$12</p>
+            <button type="button" class="order-btn" aria-label="Order Affogato">
+              Order
+            </button>
+          </article>
+
+          <article class="menu-item">
+            <img
+              src="/img/berry-cake.jpg"
+              alt="Berry Cake with fresh strawberries and blueberries"
+              loading="lazy"
+            />
+            <h3>Berry Cake</h3>
+            <p class="price">$34</p>
+            <button
+              type="button"
+              class="order-btn"
+              aria-label="Order Berry Cake"
+            >
+              Order
+            </button>
+          </article>
+
+          <article class="menu-item">
+            <img
+              src="/img/americano.jpg"
+              alt="Americano - espresso diluted with hot water"
+              loading="lazy"
+            />
+            <h3>Americano</h3>
+            <p class="price">$15</p>
+            <button
+              type="button"
+              class="order-btn"
+              aria-label="Order Americano"
+            >
+              Order
+            </button>
+          </article>
+
+          <article class="menu-item">
+            <img
+              src="/img/chokolate-cake.jpg"
+              alt="Rich Chocolate Cake with ganache topping"
+              loading="lazy"
+            />
+            <h3>Chocolate Cake</h3>
+            <p class="price">$40</p>
+            <button
+              type="button"
+              class="order-btn"
+              aria-label="Order Chocolate Cake"
+            >
+              Order
+            </button>
+          </article>
+
+          <article class="menu-item">
+            <img
+              src="/img/cappucino.jpg"
+              alt="Cappuccino with perfect foam and cocoa dusting"
+              loading="lazy"
+            />
+            <h3>Cappuccino</h3>
+            <p class="price">$19</p>
+            <button
+              type="button"
+              class="order-btn"
+              aria-label="Order Cappuccino"
+            >
+              Order
+            </button>
+          </article>
+
+          <article class="menu-item">
+            <img
+              src="/img/fruits-cake.jpg"
+              alt="Fresh Fruits Cake layered with cream and seasonal fruits"
+              loading="lazy"
+            />
+            <h3>Fruits Cake</h3>
+            <p class="price">$59</p>
+            <button
+              type="button"
+              class="order-btn"
+              aria-label="Order Fruits Cake"
+            >
+              Order
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservation" class="reservation-section">
+      <div class="container">
+        <h2 class="section-title">Table Reservation</h2>
+        <p class="section-subtitle">
+          Please fill in your details and we’ll reserve your table
+        </p>
+
+        <form
+          action="https://formspree.io/f/your-form-id"
+          method="POST"
+          class="reservation-form"
+        >
+          <div class="form-grid">
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="fullName"
+                >Full Name <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="e.g. John Doe"
+                required
+                minlength="3"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+
+            <!-- Date -->
+            <div class="form-group">
+              <label for="date"
+                >Reservation Date <span class="required">*</span></label
+              >
+              <input
+                type="date"
+                id="date"
+                name="date"
+                required
+                min="2025-12-07"
+              />
+            </div>
+
+            <!-- Number of Guests -->
+            <div class="form-group">
+              <label for="guests"
+                >Number of Guests <span class="required">*</span></label
+              >
+              <select id="guests" name="guests" required>
+                <option value="" disabled selected>Select</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7">7 People</option>
+                <option value="8">8+ People</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group full-width">
+            <label for="message">Special Request (optional)</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="e.g. window seat, birthday, dietary restrictions..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Reservation</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <!-- Logo / Name -->
+        <div class="footer-brand">
+          <h3>Café Lumière</h3>
+          <p>Warm drinks, sweet moments</p>
+        </div>
+
+        <!-- Quick Links & Social -->
+        <div class="footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a
+              href="https://instagram.com/yourcafe"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a
+              href="https://t.me/yourcafe"
+              target="_blank"
+              aria-label="Telegram"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+                ></path>
+                <path
+                  d="m17.27 8.43-8.52 7.92-3.07-1.3a.64.64 0 0 1 .01-1.2l10.48-4.11c.36-.14.68.3.44.6z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="footer-address">
+          <h4>Visit Us</h4>
+          <p>
+            123 Coffee Street, Downtown<br />
+            New York, NY 10001<br />
+            Open Daily: 8:00 AM – 11:00 PM
+          </p>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Café Lumière. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
