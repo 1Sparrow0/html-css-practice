@@ -132,7 +132,7 @@
     <div class="relative -mt-32 z-20 px-4 md:px-12 space-y-12 pb-20">
       <!-- ردیف ۱ -->
       <section>
-        <h2 class="text-2xl md:text-4xl font-bold mb-4">This Weeks Trends</h2>
+        <h2 class="text-2xl md:text-4xl font-bold mb-8">This Weeks Trends</h2>
         <div class="group relative">
           <button
             data-prev
@@ -399,6 +399,887 @@
           </div>
         </div>
       </section>
+
+      <!-- ردیف 2 -->
+
+      <section>
+        <h2 class="text-2xl md:text-4xl font-bold mb-8">Horror</h2>
+        <div class="group relative">
+          <button
+            data-prev
+            aria-label="Previous"
+            class="absolute left-0 top-1/2 -translate-y-1/2 z-30 bg-black/70 p-3 rounded-full opacity-0 group-hover:opacity-100 transition hover:bg-white/20"
+          >
+            <svg class="w-8 h-8" fill="white" viewBox="0 0 24 24">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L9.41 12z" />
+            </svg>
+          </button>
+          <button
+            data-next
+            aria-label="Next"
+            class="absolute right-0 top-1/2 -translate-y-1/2 z-30 bg-black/70 p-3 rounded-full opacity-0 group-hover:opacity-100 transition hover:bg-white/20"
+          >
+            <svg class="w-8 h-8" fill="white" viewBox="0 0 24 24">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+          </button>
+
+          <div
+            id="moviesRow"
+            class="flex overflow-x-scroll scrollbar-hide gap-4 pb-4 scroll-smooth snap-x"
+          >
+            <!-- Card 1 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/dark-knight.webp"
+                  alt="dark knight"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Dark Knight 2008</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/dune.webp"
+                  alt="dune"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Dune 2021</h3>
+                  <p class="text-sm">100 Min | IMDB 7.9</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/forrest-gump.webp"
+                  alt="forrest gump"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Forrest Gump</h3>
+                  <p class="text-sm">100 Min | IMDB 8.0</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/inception.webp"
+                  alt="inception"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Inception</h3>
+                  <p class="text-sm">100 Min | IMDB 9.0</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/intersteller.webp"
+                  alt="Interstellar"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Interstellar</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/lalaland.webp"
+                  alt="lalaland"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">La La Land</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/parasite.webp"
+                  alt="Parasite"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Parasite</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/pulp-fiction.webp"
+                  alt="pulp fiction"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Pulp Fiction</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/redemption.webp"
+                  alt="redemption"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">The Shawshank Redemption</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/spider-man.webp"
+                  alt="Spider Man"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Spider Man</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ردیف 3 -->
+
+      <section>
+        <h2 class="text-2xl md:text-4xl font-bold mb-8">Comedy</h2>
+        <div class="group relative">
+          <button
+            data-prev
+            aria-label="Previous"
+            class="absolute left-0 top-1/2 -translate-y-1/2 z-30 bg-black/70 p-3 rounded-full opacity-0 group-hover:opacity-100 transition hover:bg-white/20"
+          >
+            <svg class="w-8 h-8" fill="white" viewBox="0 0 24 24">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L9.41 12z" />
+            </svg>
+          </button>
+          <button
+            data-next
+            aria-label="Next"
+            class="absolute right-0 top-1/2 -translate-y-1/2 z-30 bg-black/70 p-3 rounded-full opacity-0 group-hover:opacity-100 transition hover:bg-white/20"
+          >
+            <svg class="w-8 h-8" fill="white" viewBox="0 0 24 24">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+          </button>
+
+          <div
+            id="moviesRow"
+            class="flex overflow-x-scroll scrollbar-hide gap-4 pb-4 scroll-smooth snap-x"
+          >
+            <!-- Card 1 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                src=https://resizing.flixster.com/pKO-ALQ5Qv6_wqf27PIuU_7A5KA=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9096998_v_h9_ay.jpg"
+                alt="The Intouchables" class="w-full h-96 object-cover" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Dark Knight 2008</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/dune.webp"
+                  alt="dune"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Dune 2021</h3>
+                  <p class="text-sm">100 Min | IMDB 7.9</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/forrest-gump.webp"
+                  alt="forrest gump"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Forrest Gump</h3>
+                  <p class="text-sm">100 Min | IMDB 8.0</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/inception.webp"
+                  alt="inception"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Inception</h3>
+                  <p class="text-sm">100 Min | IMDB 9.0</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/intersteller.webp"
+                  alt="Interstellar"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Interstellar</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/lalaland.webp"
+                  alt="lalaland"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">La La Land</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/parasite.webp"
+                  alt="Parasite"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Parasite</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/pulp-fiction.webp"
+                  alt="pulp fiction"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Pulp Fiction</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/redemption.webp"
+                  alt="redemption"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">The Shawshank Redemption</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/spider-man.webp"
+                  alt="Spider Man"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Spider Man</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ردیف 4 -->
+
+      <section>
+        <h2 class="text-2xl md:text-4xl font-bold mb-8">Actions</h2>
+        <div class="group relative">
+          <button
+            data-prev
+            aria-label="Previous"
+            class="absolute left-0 top-1/2 -translate-y-1/2 z-30 bg-black/70 p-3 rounded-full opacity-0 group-hover:opacity-100 transition hover:bg-white/20"
+          >
+            <svg class="w-8 h-8" fill="white" viewBox="0 0 24 24">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L9.41 12z" />
+            </svg>
+          </button>
+          <button
+            data-next
+            aria-label="Next"
+            class="absolute right-0 top-1/2 -translate-y-1/2 z-30 bg-black/70 p-3 rounded-full opacity-0 group-hover:opacity-100 transition hover:bg-white/20"
+          >
+            <svg class="w-8 h-8" fill="white" viewBox="0 0 24 24">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+          </button>
+
+          <div
+            id="moviesRow"
+            class="flex overflow-x-scroll scrollbar-hide gap-4 pb-4 scroll-smooth snap-x"
+          >
+            <!-- Card 1 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/dark-knight.webp"
+                  alt="dark knight"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Dark Knight 2008</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/dune.webp"
+                  alt="dune"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Dune 2021</h3>
+                  <p class="text-sm">100 Min | IMDB 7.9</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/forrest-gump.webp"
+                  alt="forrest gump"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Forrest Gump</h3>
+                  <p class="text-sm">100 Min | IMDB 8.0</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/inception.webp"
+                  alt="inception"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Inception</h3>
+                  <p class="text-sm">100 Min | IMDB 9.0</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/intersteller.webp"
+                  alt="Interstellar"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Interstellar</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/lalaland.webp"
+                  alt="lalaland"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">La La Land</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/parasite.webp"
+                  alt="Parasite"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Parasite</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/pulp-fiction.webp"
+                  alt="pulp fiction"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Pulp Fiction</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/redemption.webp"
+                  alt="redemption"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">The Shawshank Redemption</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div
+              class="snap-center shrink-0 w-64 md:w-80 group/card hover:z-50 transition-all duration-300"
+            >
+              <div
+                class="relative overflow-hidden rounded-lg shadow-2xl hover:scale-110 transition-transform duration-500"
+              >
+                <img
+                  src="./img/spider-man.webp"
+                  alt="Spider Man"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 opacity-0 group-hover/card:opacity-100 transition"
+                >
+                  <h3 class="text-xl font-bold">Spider Man</h3>
+                  <p class="text-sm">100 Min | IMDB 7.6</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div
+          class="flex flex-row justify-around items-center border-t-4 border-red-600 py-8 mt-16 flex-wrap gap-8"
+        >
+          <!-- Logo / Name -->
+          <div class="footer-brand">
+            <h3 class="text-2xl font-bold">
+              <span class="text-red-500">Netflix</span> Clone
+            </h3>
+            <p>All Movie Archived</p>
+          </div>
+
+          <!-- Quick Links & Social -->
+          <div class="">
+            <h4>Follow Us</h4>
+            <div class="flex gap-4 mt-4">
+              <a
+                href="https://instagram.com/mehran_srw"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a
+                href="https://t.me/mehran_srw"
+                target="_blank"
+                aria-label="Telegram"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+                  ></path>
+                  <path
+                    d="m17.27 8.43-8.52 7.92-3.07-1.3a.64.64 0 0 1 .01-1.2l10.48-4.11c.36-.14.68.3.44.6z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="footer-address">
+            <h4>Visit Us</h4>
+            <p>
+              123 Coffee Street, Downtown<br />
+              New York, NY 10001<br />
+              Open Daily: 8:00 AM – 11:00 PM
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <style>
@@ -458,8 +1339,9 @@
         menuBtn.addEventListener("click", () => {
           mobileMenu.classList.toggle("hidden");
         });
-        hamburgerIcon.innerHTML=mobileMenu.classList.contains('hidden')? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>' 
-        : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+        hamburgerIcon.innerHTML = mobileMenu.classList.contains("hidden")
+          ? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>'
+          : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
       });
     </script>
   </body>
