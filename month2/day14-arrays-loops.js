@@ -34,3 +34,19 @@ console.log(
 const averageRating =
   movies.reduce((sum, movie) => sum + movie.rating, 0) / movies.length;
 console.log("Average IMDB:\n", averageRating.toFixed(2));
+
+// Adding a New Movie
+
+movies.push({ title: "Dune", rating: 8.1, genre: "Sci-Fiction" });
+console.log("Dune After Pushing:\n", movies[movies.length - 1].title);
+
+// First Action Movie
+const firstAction = movies.find((movie) => movie.genre === "Action");
+console.log("First Action Movie:\n", firstAction?.title || "Not Found");
+
+// Sorting base on IMDB
+const sortedByRating = [...movies].sort((a, b) => b.rating - a.rating);
+console.log("Sorting Base On IMDB:\n");
+sortedByRating.forEach((movie, i) =>
+  console.log(`${i + 1}. ${movie.title} - ${movie.rating}`)
+);
