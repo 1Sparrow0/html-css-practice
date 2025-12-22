@@ -16,7 +16,43 @@
       }
     </style>
   </head>
-  <body>
+  <body
+    class="bg-gradient-to-br from-purple-900 to-blue-900 min-h-screen text-white"
+  >
+    <div class="max-w-2xl mx-auto p-6 pt-20">
+      <h1 class="text-4xl font-bold text-center mb-8">My ToDo List</h1>
+
+      <!--  adding items form -->
+
+      <div class="bg-white backdrop-blur rounded-lg p-6 mb-8">
+        <div class="flex gap-4">
+          <input
+            type="text"
+            placeholder="Write New Task..."
+            id="todo-input"
+            class="flex-1 p-3 rounded bg-white/20 placeholder-gray-300 focus:outline-none focus:bg-white/30 transition"
+          />
+          <button
+            id="add-btn"
+            class="bg-green-600 px-3 py-3 rounded font-bold hover:bg-green-700 transition"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+
+      <!-- Task Lists -->
+
+      <ul id="todo-list" class="space-y-4">
+        <!-- Added in js -->
+      </ul>
+
+      <!-- Message when list is empty -->
+      <p id="empty-message" class="text-center text-gray-400 mt-10 text-xl">
+        No Task Yet! Time to Rest😎
+      </p>
+    </div>
+
     <script src="./day16-todo-app.js"></script>
   </body>
 </html>
