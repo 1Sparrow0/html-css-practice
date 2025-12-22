@@ -9,7 +9,7 @@ let todos = [];
 const loadTodos = function () {
   const saved = localStorage.getItem("todos");
   if (saved) {
-    todos = JSON.stringify(saved);
+    todos = JSON.parse(saved);
     renderTodos();
   }
 };
@@ -42,3 +42,60 @@ function renderTodos() {
     todoList.appendChild(li);
   });
 }
+
+// Adding Tasks
+
+function addTodo() {
+  const text = input.value.trim();
+  if (text) {
+    todos.push({ text, completed: false });
+    input.value = "";
+    saveAndRender();
+  }
+}
+
+// Completing/Cancel
+
+function toggleComplete(index) {
+  todos[index].completed = !todos[index].completed;
+  saveAndRender();
+}
+
+// Deleting Tasks
+
+function deleteTodo(index) {
+  todos.splice(index, 1);
+  saveAndRender();
+}
+
+// Save & Render
+
+function saveAndRender() {
+  localStorage.setItem("todos", JSON.stringify(todos));
+  renderTodos();
+}
+
+// EventListeners
+
+addBtn.addEventListener("click", addTodo);
+input.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    addTodo();
+  }
+});
+
+// Event Delegation fot btns
+
+todoList.addEventListener("click", (e) => {
+  if (e.target.classList.contains("complete-btn")) {
+    const index = parseInt(e.target.dataset.index);
+    toggleComplete(index);
+  }
+  if (e.target.classList.contains("delete-btn")) {
+    const index = parseInt(e.target.dataset.index);
+    deleteTodo(index);
+  }
+});
+
+// Start
+loadTodos();
