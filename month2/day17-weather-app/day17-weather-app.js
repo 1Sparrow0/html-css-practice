@@ -53,7 +53,7 @@ async function getWeather(city) {
     const data = await weatherRes.json();
     const forecastData = await forecastRes.json();
 
-    displayCurrentWeather(weatherData);
+    displayCurrentWeather(data);
     displayForecast(forecastData);
 
     localStorage.setItem("lastCity", city);
@@ -67,7 +67,7 @@ async function getWeather(city) {
 // Display Current Weather
 
 function displayCurrentWeather(data) {
-  cityName.textContent = data.Name;
+  cityName.textContent = data.name;
   temp.textContent = `${Math.round(data.main.temp)}°C`;
   description.textContent = data.weather[0].description;
   humidity.textContent = data.main.humidity;
@@ -85,14 +85,14 @@ function displayCurrentWeather(data) {
 function displayForecast(data) {
   forecastDiv.innerHTML = "";
 
-  const daily = data.list.filter((item) => item.dt_text.includes("12:00:00"));
+  const daily = data.list.filter((item) => item.dt_txt.includes("12:00:00"));
 
   daily.slice(0, 5).forEach((day) => {
     const date = new Date(day.dt * 1000);
     const dayName = date.toLocaleDateString("en-US", { weekday: "long" });
 
     const card = document.createElement("div");
-    card.classList = "bg-white/10 backdrop-blur rounded-lg p-4 text-center";
+    card.className = "bg-white/10 backdrop-blur rounded-lg p-4 text-center";
     card.innerHTML = `
     <p class="font-bold">${dayName}</p>
       <img src="https://openweathermap.org/img/wn/${
